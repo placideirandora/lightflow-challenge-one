@@ -46,7 +46,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  padding: 40px 20px;
   margin: 20px;
 }
 
@@ -124,6 +124,7 @@ body {
 }
 
 /* CSS LOADER */
+
 .loader {
   display: flex;
   flex-direction: row;
@@ -161,10 +162,74 @@ body {
 }
 
 /* FOOTER */
+
 footer {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 50px;
+}
+
+/* RESPONSIVENESS */
+
+/* DESKTOP */
+
+@media screen and (max-width: 1169px) {
+  .post-card {
+    width: 400px;
+  }
+}
+
+/* TABLET */
+
+@media screen and (max-width: 880px) {
+  .post-card {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .sub-heading {
+    font-size: 35px;
+  }
+
+  .user-card {
+    width: 300px;
+  }
+
+  .post-card {
+    width: 320px;
+  }
+}
+
+/* MOBILE & PHABLET */
+
+@media screen and (max-width: 720px) {
+  .post-card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .heading {
+    font-size: 35px;
+    margin: 0 10px;
+  }
+
+  .sub-heading {
+    font-size: 30px;
+  }
+
+  .user-card {
+    width: 400px;
+  }
+
+  .post-card {
+    width: 400px;
+  }
 }
