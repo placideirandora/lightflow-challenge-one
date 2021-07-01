@@ -7,14 +7,13 @@ window.onload = () => {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then((response) => response.json())
     .then((data) => {
-      posts = data;
       loader.style.display = "none";
       content.style.display = "flex";
       displayUsers(data);
     })
     .catch((error) => {
       loader.style.display = "none";
-      alert("Could not fetch information");
+      alert("Could not fetch users");
       console.error("Error:", error);
     });
 };
