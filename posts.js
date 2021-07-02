@@ -43,5 +43,5 @@ const displayPosts = (data) => {
 
 const displayHomepage = () => {
   const url = new URL(window.location.href);
-  window.location.href = `${url.origin}/index.html`;
+  window.location.href = `${url.origin}/lightflow-challenge-one/index.html`;
 };

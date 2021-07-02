@@ -36,5 +36,5 @@ const displayUsers = (data) => {
 
 const displayUserPostsPage = (userId, name) => {
   const url = new URL(window.location.href);
-  window.location.href = `${url.origin}/posts.html?userId=${userId}&name=${name}`;
+  window.location.href = `${url.origin}/lightflow-challenge-one/posts.html?userId=${userId}&name=${name}`;
 };
